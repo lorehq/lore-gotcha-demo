@@ -4,6 +4,8 @@ Mock API services with deliberate gotchas for testing AI agent discovery, knowle
 
 ## Quick Start
 
+> **Tip:** Your agent can set up and run this entire test for you. Clone the repo and tell your agent to start the services and run verification.
+
 ```bash
 git clone https://github.com/lorehq/lore-gotcha-demo.git
 cd lore-gotcha-demo
@@ -166,6 +168,8 @@ The [`results/`](results/) directory contains the full raw data from all 50 test
 These same files are published on the [Lore docs site](https://lorehq.github.io/lore-docs/cost-evidence/).
 
 ## Reproducing the Cost Evidence Test
+
+> **Tip:** Your agent can help set up and coordinate the test runs below. Tell it which condition you want to run and it handles instance creation, Docker setup, and log collection.
 
 The [Lore cost evidence](https://lorehq.github.io/lore-docs/cost-evidence/) was measured using these services across 50 Claude Code sessions in 5 conditions. Below is how to reproduce it.
 
