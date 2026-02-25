@@ -154,6 +154,17 @@ An agent encountering these services cold will typically:
 
 This discovery path typically costs 17-32 API requests when the agent starts cold. With prior knowledge (skills documenting the gotchas), the agent goes directly to the correct endpoints on the first attempt.
 
+## Results
+
+The [`results/`](results/) directory contains the full raw data from all 50 test sessions:
+
+- **[Raw Session Data](results/raw-data.md)** — Per-session token, cache, model, and cost breakdowns
+- **[Analysis](results/analysis.md)** — Findings, cost progression, variance, cumulative ROI
+- **[Methodology](results/methodology.md)** — Test design, pricing basis, measurement approach
+- **[Operator Inputs](results/operator-inputs.md)** — Exact operator messages for each condition
+
+These same files are published on the [Lore docs site](https://lorehq.github.io/lore-docs/cost-evidence/).
+
 ## Reproducing the Cost Evidence Test
 
 The [Lore cost evidence](https://lorehq.github.io/lore-docs/cost-evidence/) was measured using these services across 50 Claude Code sessions in 5 conditions. Below is how to reproduce it.
