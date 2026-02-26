@@ -154,7 +154,7 @@ An agent encountering these services cold will typically:
 4. Discover the required `X-Warehouse: primary` header on the inventory service (via error response)
 5. Discover the correct query parameter names (`from`/`to` instead of `start`/`end`, `sku` instead of `product`)
 
-This discovery path typically costs 17-32 API requests when the agent starts cold. With prior knowledge (skills documenting the gotchas), the agent goes directly to the correct endpoints on the first attempt.
+This discovery path typically costs 17-32 API requests when the agent starts cold. With prior knowledge (fieldnotes documenting the gotchas), the agent goes directly to the correct endpoints on the first attempt.
 
 ## Results
 
@@ -199,9 +199,9 @@ Run 10 sessions per condition, same task, same day:
 |-----------|-------|-----------------|----------------|
 | **Raw Cold** | No Lore. Fresh workspace with unrelated CLAUDE.md (cache-breaker). | None | Task prompt + service URLs |
 | **Lore Cold** | Fresh Lore instance per session (lore-01..10). Empty knowledge base. | None | Task prompt + clarification + capture approval |
-| **Lore Warm** | Same instances. Knowledge from cold persists. | Skills + env docs | Task prompt only |
-| **Lore Hot** | Same instances. Knowledge from cold+warm. Operator requests runbook after answer. | Skills + env docs | Task prompt + runbook request |
-| **Lore Runbook** | Same instances. Full knowledge stack. | Skills + env docs + runbook | One word: "fulfillment" |
+| **Lore Warm** | Same instances. Knowledge from cold persists. | Fieldnotes + env docs | Task prompt only |
+| **Lore Hot** | Same instances. Knowledge from cold+warm. Operator requests runbook after answer. | Fieldnotes + env docs | Task prompt + runbook request |
+| **Lore Runbook** | Same instances. Full knowledge stack. | Fieldnotes + env docs + runbook | One word: "fulfillment" |
 
 ### Operator Inputs (Exact Messages)
 

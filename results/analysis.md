@@ -59,7 +59,7 @@ Capture cost is the cost of writing knowledge artifacts — skills, environment 
 
 | Condition | Sessions with Capture | Mean Capture Cost | What's Captured |
 |-----------|----------------------|-------------------|-----------------|
-| Lore Cold | 10/10 | $0.0814 | Skills (API gotchas) + environment docs (endpoints, params, headers) |
+| Lore Cold | 10/10 | $0.0814 | Fieldnotes (API gotchas) + environment docs (endpoints, params, headers) |
 | Lore Warm | 1/10 | $0.0087 | Minor doc updates (lore-01 only) |
 | Lore Hot | 10/10 | $0.0795 | Runbook (step-by-step procedure) |
 | Lore Runbook | 0/10 | — | Nothing — pure execution |
@@ -74,7 +74,7 @@ Capture cost is the cost of writing knowledge artifacts — skills, environment 
 
 The $0.17 investment produces three categories of reusable knowledge:
 
-1. **Skills** (~$0.04): Document API gotchas — the orders endpoint requires both `from` and `to` params, the inventory endpoint requires an `X-Warehouse: primary` header, the versioned paths differ from the obvious ones. These prevent the model from repeating discovery mistakes.
+1. **Fieldnotes** (~$0.04): Document API gotchas — the orders endpoint requires both `from` and `to` params, the inventory endpoint requires an `X-Warehouse: primary` header, the versioned paths differ from the obvious ones. These prevent the model from repeating discovery mistakes.
 
 2. **Environment docs** (~$0.04): Map the service topology — which URLs serve which APIs, what parameters each endpoint accepts, what headers are required. This is the reference material that makes warm sessions possible.
 

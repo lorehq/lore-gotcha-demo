@@ -20,7 +20,7 @@ The model received no other guidance. It had to discover API versioning, require
 
 ## Lore Cold
 
-Three operator messages per session. The Lore framework's session banner and hooks inject context about the knowledge base, delegation rules, and capture conventions — but the operator's task input follows the same pattern.
+Three operator messages per session. The Lore framework's session banner and hooks inject context about the knowledge base, delegation rules, and capture rules — but the operator's task input follows the same pattern.
 
 **Message 1** (task prompt — identical across all 10 sessions):
 ```
@@ -42,7 +42,7 @@ All responses provide the same two service URLs. The wording of "last week" and 
 yes
 ```
 
-After delivering the answer, the model proposed writing environment documentation (service endpoints, required params/headers, API gotchas). The operator approved with "yes" (or "yes, write those up" in some sessions). This triggered the capture phase.
+After delivering the answer, the model proposed writing environment documentation (service endpoints, required params/headers, API gotchas as fieldnotes). The operator approved with "yes" (or "yes, write those up" in some sessions). This triggered the capture phase.
 
 ## Lore Warm
 
