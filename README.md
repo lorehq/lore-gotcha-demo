@@ -177,7 +177,7 @@ The [Lore cost evidence](https://lorehq.github.io/lore-docs/cost-evidence/) was 
 
 - Node.js 18+
 - Claude Code (CLI)
-- [Lore](https://github.com/lorehq/lore) installed via `npx create-lore`
+- [Lore](https://github.com/lorehq/lore) installed via `lore init`
 - Docker (for semantic search sidecar — the test used full Lore integration)
 
 ### Test Configuration

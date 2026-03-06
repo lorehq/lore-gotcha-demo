@@ -1,0 +1,139 @@
+{
+  "cost": {
+    "answer": 0.5474,
+    "capture": 0,
+    "total": 0.5474,
+    "by_model": {
+      "claude-opus-4-6": {
+        "cost": 0.3327,
+        "requests": 9,
+        "input": 27,
+        "output": 2140,
+        "cache_read": 225441,
+        "cache_create": 26617
+      },
+      "claude-sonnet-4-6": {
+        "cost": 0.2147,
+        "requests": 31,
+        "input": 57,
+        "output": 5313,
+        "cache_read": 608336,
+        "cache_create": 44521
+      }
+    },
+    "by_role": {
+      "orchestrator": {
+        "cost": 0.3327,
+        "requests": 9,
+        "by_model": {
+          "claude-opus-4-6": {
+            "cost": 0.3327,
+            "requests": 9,
+            "input": 27,
+            "output": 2140,
+            "cache_read": 225441,
+            "cache_create": 26617
+          }
+        }
+      },
+      "workers": [
+        {
+          "name": "agent-a260f5bd16defd39e.jsonl",
+          "cost": 0.0703,
+          "requests": 9,
+          "by_model": {
+            "claude-sonnet-4-6": {
+              "cost": 0.0703,
+              "requests": 9,
+              "input": 23,
+              "output": 1369,
+              "cache_read": 155172,
+              "cache_create": 19609
+            }
+          }
+        },
+        {
+          "name": "agent-a397bc8730ebc4c3d.jsonl",
+          "cost": 0.1443,
+          "requests": 22,
+          "by_model": {
+            "claude-sonnet-4-6": {
+              "cost": 0.1443,
+              "requests": 22,
+              "input": 34,
+              "output": 3944,
+              "cache_read": 453164,
+              "cache_create": 24912
+            }
+          }
+        }
+      ]
+    },
+    "output_json_cross_ref": {
+      "claude-opus-4-6": {
+        "cost": 0.2038,
+        "input": 15,
+        "output": 2107,
+        "cache_read": 127435,
+        "cache_create": 13978
+      },
+      "claude-sonnet-4-6": {
+        "cost": 0.4682,
+        "input": 33,
+        "output": 5704,
+        "cache_read": 355640,
+        "cache_create": 23622
+      },
+      "claude-haiku-4-5": {
+        "cost": 0.0165,
+        "input": 12035,
+        "output": 896,
+        "cache_read": 0,
+        "cache_create": 0
+      }
+    }
+  },
+  "timing": null,
+  "delegation": {
+    "worker_count": 2,
+    "worker_models": [
+      "claude-sonnet-4-6"
+    ],
+    "orch_requests": 9
+  },
+  "tool_calls": {
+    "total": 36,
+    "orch": 6,
+    "by_name": {
+      "mcp__lore-search__lore_search": 2,
+      "Glob": 1,
+      "Task": 3,
+      "mcp__lore-search__lore_health": 1,
+      "Bash": 28,
+      "Read": 1
+    },
+    "max_worker": 23,
+    "semantic_searches": 2
+  },
+  "behavior": {
+    "asked_questions": false,
+    "proposed_capture": true,
+    "capture_types": [
+      "environment"
+    ],
+    "services_documented": 2,
+    "used_existing_knowledge": true
+  },
+  "accuracy": {
+    "mentions_sku_c": true,
+    "mentions_shortage": true,
+    "mentions_quantity_2": true,
+    "correct_answer": true
+  },
+  "clarification": {
+    "asks_service_location": false,
+    "asks_date_range": false,
+    "asks_enough_definition": false
+  },
+  "oversearching": []
+}

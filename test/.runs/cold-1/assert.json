@@ -1,0 +1,40 @@
+{
+  "condition": "cold",
+  "run_index": 1,
+  "total_runs": 1,
+  "pass": true,
+  "failures": 0,
+  "assertions": [
+    {
+      "name": "accuracy",
+      "status": "PASS",
+      "detail": "sku_c=true shortage=true qty2=true"
+    },
+    {
+      "name": "cost_answer",
+      "status": "PASS",
+      "detail": "$0.5474 <= $1.5"
+    },
+    {
+      "name": "worker_count",
+      "status": "PASS",
+      "detail": "2 >= 0"
+    },
+    {
+      "name": "orch_requests",
+      "status": "PASS",
+      "detail": "9 <= 50"
+    },
+    {
+      "name": "max_worker_tool_calls",
+      "status": "PASS",
+      "detail": "23 <= 25"
+    }
+  ],
+  "summary": {
+    "cost": 0.5474,
+    "exec_ms": null,
+    "workers": 2,
+    "accuracy": true
+  }
+}
